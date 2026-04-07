@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<body>
+    <style> 
+        body {
+            background-color: violet;
+            color: pink;
+            font-size: 30px;
+            margin: 0;
+            
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            
+        }
+
+
+        @media screen and (max-width: 1200px)         
+        {
+            body {
+                background-color: pink;
+                color: violet;
+                display: flex;
+                justify-content: space-between;
+                align-items: stretch;
+                height: 100vh;
+
+
+            }
+
+            .container {
+                flex-direction: row;
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+            }
+            
+        }
+
+        @media  screen and (max-width: 800px) 
+        {
+            body {
+                background-color: black;
+                color: pink;
+                justify-content: space-between;
+                align-items: stretch;
+                height: 100vh;
+            }
+
+            .container {
+                flex-direction: column;
+                align-items: center;
+                
+            }
+            
+        }
+ </style>
+ </head>       
+
+<body>
+     <div class="container">
+        <div>Contessa</div>
+        <div>Cacal</div>
+        <div>Vidad</div>
+    </div>  
+</body>
+
+
+
+</html>
